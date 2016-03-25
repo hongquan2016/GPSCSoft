@@ -26,3 +26,11 @@ To watch some training videos, visit http://www.youtube.com/user/c9ide
 testtset
 
 fdsfds 
+
+how to commit
+git pull
+git add .
+git commit -m "comment"
+git push
+username 
+password
