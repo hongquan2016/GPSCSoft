@@ -23,27 +23,12 @@ The Cloud9 IDE team
 Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
 To watch some training videos, visit http://www.youtube.com/user/c9ide
 
-testtset
 
-<<<<<<< HEAD
-fdsfds 
-
-how to commit
-git pull
+---------------How to commit to GitHub-----------------------------------------------
+git pull (git pull <remote>->git@github.com:roguelider/gpscsoft.git <branch>->master)
 git add .
 git commit -m "comment"
-git push
+git push (git push -u <remote>->origin <branch>->master)
 username 
 password
 =======
-fdsfds
-
-
-
-fyzokasdf
-
-chq
->>>>>>> efcda7e84d82bb7d2b8a6015e31827767ec7991c
-
-
-add
