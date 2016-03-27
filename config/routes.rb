@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
+  get 'sheets/index'
+
+  get 'sheets/new'
+
+  get 'sheets/create'
+
+  get 'sheets/delete'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-root 'application#uploadfile'
+root 'sheets#uploadfile'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -25,9 +33,13 @@ root 'application#uploadfile'
   #     collection do
   #       get 'sold'
   #     end
-  #   end
-resources :sheet do
-      collection { post :upload_sheet }
+#CarrierWaveExample::Application.routes.draw do
+ #  resources :sheets, only: [:index, :new, :create, :destroy]
+   #root "sheets#index"
+#end
+
+resources :sheets do
+  collection { post :uploadfile }
 end
   # Example resource route with sub-resources:
   #   resources :products do
