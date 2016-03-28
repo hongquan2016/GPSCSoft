@@ -28,6 +28,9 @@ gem 'tzinfo-data', platforms: [:mingw,:mswin,:x64_mingw,:jruby]
 
 gem 'carrierwave', '~> 0.9'
 gem 'bootstrap-sass','~> 2.3.2'
+gem 'roo'
+gem "iconv", "~> 1.0.3"
+gem 'roo-xls'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -1,6 +1,7 @@
 class SheetsController < ApplicationController
    def index
       @sheets = Sheet.all
+      @representatives=Representative.all
    end
    
    def new
@@ -11,6 +12,7 @@ class SheetsController < ApplicationController
       @sheet = Sheet.new(sheet_params)
       
       if @sheet.save
+      Representative.uploadFile(params[:sheet][:attachment])
          redirect_to sheets_path, notice: "The sheet #{@sheet.name} has been uploaded."
       else
          render "new"
