@@ -16,8 +16,9 @@ ActiveRecord::Schema.define(version: 20160327015432) do
   create_table "departments", force: :cascade do |t|
     t.string   "name"
     t.integer  "state"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "department_id"
   end
 
   create_table "representatives", force: :cascade do |t|
