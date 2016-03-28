@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-root 'sheets#uploadfile'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -33,14 +32,12 @@ root 'sheets#uploadfile'
   #     collection do
   #       get 'sold'
   #     end
-#CarrierWaveExample::Application.routes.draw do
- #  resources :sheets, only: [:index, :new, :create, :destroy]
-   #root "sheets#index"
-#end
+   resources :sheets, only: [:index, :new, :create, :destroy]
+   root "sheets#index"
 
-resources :sheets do
-  collection { post :uploadfile }
-end
+# resources :sheets do
+#   root "sheets#index"
+# end
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
